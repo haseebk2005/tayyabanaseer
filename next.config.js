@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   optimizeFonts: false,
   images: {
+    unoptimized: true,
     domains: [
       "user-images.githubusercontent.com",
       "cdn.hashnode.com",
