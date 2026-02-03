@@ -89,7 +89,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${syne.className} scroll-smooth bg-brand.deep text-slate-50 transition-colors duration-300 scrollbar-thin scrollbar-track-brand.teal/60 scrollbar-thumb-brand.accent/80 dark:bg-slate-950 dark:text-slate-50`}
+        className={`${syne.className} scroll-smooth bg-brand-deep text-slate-50 transition-colors duration-300 scrollbar-thin scrollbar-track-brand-teal/60 scrollbar-thumb-brand-accent/80 dark:bg-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider>
           {children}

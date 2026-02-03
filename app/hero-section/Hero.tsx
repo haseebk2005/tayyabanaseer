@@ -15,7 +15,7 @@ const Hero = () => {
       initial="initial"
       animate="animate"
     >
-      <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-gradient-to-br from-brand.deep via-brand.teal to-brand.primary mix-blend-multiply opacity-95 dark:from-slate-950 dark:via-brand.deep dark:to-brand.primary"></motion.div>
+      <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-gradient-to-br from-brand-deep via-brand-teal to-brand-primary mix-blend-multiply opacity-95 dark:from-slate-950 dark:via-brand-deep dark:to-brand-primary"></motion.div>
 
       <div className="absolute top-8 flex w-full max-w-[1100px] items-center justify-between px-6 sm:top-10 sm:w-[90%] lg:max-w-[1440px]">
         <div>
@@ -25,7 +25,7 @@ const Hero = () => {
             aria-label="BOOK A CALL"
           >
             <motion.button
-              className="hidden rounded-full border border-brand.accent/70 bg-brand.primary/30 py-2 px-5 text-[14px] font-semibold uppercase tracking-wide text-slate-50 shadow-lg backdrop-blur-md transition hover:bg-brand.accent hover:text-slate-950 sm:inline-flex md:text-[16px]"
+              className="hidden rounded-full border border-brand-accent/70 bg-brand-primary/30 py-2 px-5 text-[14px] font-semibold uppercase tracking-wide text-slate-50 shadow-lg backdrop-blur-md transition hover:bg-brand-accent hover:text-slate-950 sm:inline-flex md:text-[16px]"
               variants={bodyAnimation}
             >
               BOOK A CALL

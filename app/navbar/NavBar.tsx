@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed bottom-8 left-0 right-0 z-50 mx-auto flex w-[306px] items-center justify-center gap-1 rounded-full border border-brand.accent/60 bg-brand.deep/90 px-1 py-1 text-slate-50 shadow-lg shadow-brand.deep/40 backdrop-blur-lg sm:w-[383.3px] md:p-2 lg:w-[391.3px] dark:bg-slate-900/90">
+    <nav className="fixed bottom-8 left-0 right-0 z-50 mx-auto flex w-[306px] items-center justify-center gap-1 rounded-full border border-brand-accent/60 bg-brand-deep/90 px-1 py-1 text-slate-50 shadow-lg shadow-brand-deep/40 backdrop-blur-lg sm:w-[383.3px] md:p-2 lg:w-[391.3px] dark:bg-slate-900/90">
       <Link
         href="https://drive.google.com/file/d/1Mmwl-FRGPm5QVe3AjtukJr_Jpc366Ear/view"
         target="_blank"
@@ -29,7 +29,7 @@ const NavBar = () => {
       >
         <FontAwesomeIcon
           icon={faFilePdf}
-          className="rounded-full bg-brand.primary/20 py-2 px-2 text-[16px] text-brand.accent sm:px-4 md:py-1"
+          className="rounded-full bg-brand-primary/20 py-2 px-2 text-[16px] text-brand-accent sm:px-4 md:py-1"
         />
       </Link>
 
@@ -39,7 +39,7 @@ const NavBar = () => {
         onClick={handleScroll}
         aria-label="Scroll to Home Section"
       >
-        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand.primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
+        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand-primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
           Home
         </h4>
       </Link>
@@ -49,7 +49,7 @@ const NavBar = () => {
         onClick={handleScroll}
         aria-label="Scroll to Work Section"
       >
-        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand.primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
+        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand-primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
           Work
         </h4>
       </Link>
@@ -60,7 +60,7 @@ const NavBar = () => {
         onClick={handleScroll}
         aria-label="Scroll to About Section"
       >
-        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand.primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
+        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand-primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
           About
         </h4>
       </Link>
@@ -71,7 +71,7 @@ const NavBar = () => {
         onClick={handleScroll}
         aria-label="Scroll to Contact Section"
       >
-        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand.primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
+        <h4 className="rounded-full py-2 px-2 text-[12px] transition-colors hover:bg-brand-primary/30 hover:text-white sm:px-4 sm:text-[14px] md:py-1 md:px-4">
           Contact
         </h4>
       </Link>

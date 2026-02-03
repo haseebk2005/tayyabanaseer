@@ -14,7 +14,7 @@ const ThemeToggleButton = () => {
       type="button"
       onClick={toggleTheme}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-      className="inline-flex items-center justify-center rounded-full border border-brand.accent/60 bg-brand.primary/20 px-3 py-2 text-sm font-semibold text-white shadow-md backdrop-blur-md transition-colors hover:bg-brand.accent/80 hover:text-slate-950 dark:border-brand.accent/80 dark:bg-brand.deep/60 dark:hover:bg-brand.accent"
+      className="inline-flex items-center justify-center rounded-full border border-brand-accent/60 bg-brand-primary/20 px-3 py-2 text-sm font-semibold text-white shadow-md backdrop-blur-md transition-colors hover:bg-brand-accent/80 hover:text-slate-950 dark:border-brand-accent/80 dark:bg-brand-deep/60 dark:hover:bg-brand-accent"
     >
       <FontAwesomeIcon
         icon={isDark ? faSun : faMoon}
