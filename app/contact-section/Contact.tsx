@@ -11,30 +11,30 @@ import heartIcon from "../../public/heart icon.png";
 const Contact = () => {
   return (
     <motion.section
-      className="relative z-10 flex h-[95vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28 3xl:h-[75vh]"
+      className="relative z-10 flex min-h-[80vh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-brand-deep via-slate-950 to-slate-950 py-20 md:py-24 lg:py-28"
       id="contact"
       initial="initial"
       animate="animate"
     >
-      <div className="mx-auto  flex w-[90%] flex-col items-center justify-center pt-10 md:pt-0">
+      <div className="mx-auto flex w-[90%] flex-col items-center justify-center pt-6 md:pt-0">
         <div
-          className={`flex flex-col items-start justify-center ${monaSans.className} relative w-full sm:items-center lg:max-w-[1440px] `}
+          className={`relative flex flex-col items-start justify-center ${monaSans.className} w-full sm:items-center lg:max-w-[1440px] `}
         >
           <AnimatedWords2
             title={"Let's Talk"}
             style={
-              "flex max-w-[500px] flex-col items-start text-left text-[150px] font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[170px] md:text-[200px] lg:text-center lg:text-[270px] xl:text-[390px]"
+              "flex max-w-[500px] flex-col items-start text-left text-[64px] font-extrabold uppercase leading-[0.9em] text-slate-50 sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[80px] md:text-[96px] lg:text-center lg:text-[110px] xl:text-[130px]"
             }
           />
           <Image
             src={heartIcon}
             alt="Heart Icon"
-            className="heartbeat md:-bottom-18 absolute -bottom-5 left-64 w-[120px] sm:-bottom-14 sm:left-[40%] md:left-[40%] md:w-[150px] lg:-bottom-16 lg:left-[42%] lg:w-[230px]"
+            className="heartbeat md:-bottom-18 absolute -bottom-5 left-40 w-[80px] sm:-bottom-10 sm:left-[40%] sm:w-[110px] md:left-[40%] md:w-[130px] lg:-bottom-12 lg:left-[42%] lg:w-[170px]"
           />
         </div>
 
-        <div className="mt-20 flex w-full flex-col items-end justify-center gap-16 sm:mt-32 sm:gap-12 md:mt-40 md:flex-row md:items-start md:justify-between lg:mt-12 lg:max-w-[1440px]">
-          <div className=" flex w-[350px] max-w-[90%] flex-col items-end text-right text-[14px] font-semibold uppercase text-[#e4ded7] sm:w-[350px] sm:text-[14px] md:w-[310px] md:items-start md:text-left md:text-[16px] lg:w-[420px] lg:text-[16px]">
+        <div className="mt-16 flex w-full flex-col items-end justify-center gap-16 sm:mt-20 sm:gap-12 md:mt-24 md:flex-row md:items-start md:justify-between lg:mt-16 lg:max-w-[1440px]">
+          <div className="flex w-[350px] max-w-[90%] flex-col items-end rounded-3xl border border-slate-800/80 bg-slate-950/70 p-6 text-right text-[13px] font-semibold uppercase text-slate-100 shadow-[0_18px_50px_rgba(15,23,42,0.55)] sm:w-[360px] sm:text-[13px] md:w-[360px] md:items-start md:text-left md:text-[14px] lg:w-[420px] lg:text-[14px]">
             <AnimatedBody
               text={
                 "Got a question, proposal, project, or want to work together on something?"
@@ -43,29 +43,29 @@ const Contact = () => {
                 "-mb-1 inline-block overflow-hidden pt-1 sm:-mb-2 md:-mb-3 lg:-mb-4"
               }
             />
-            <div className="bor der mt-5 flex w-[298px] items-center gap-1 md:w-[335px] md:gap-2.5">
+            <div className="mt-5 flex w-[298px] items-center gap-1 md:w-[335px] md:gap-2.5">
               <Link
                 href="mailto:tayyabanaseer886@gmail.com?subject=Lets%20work%20together!&amp;body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
                 target="_blank"
                 aria-label="Send me an email"
-                className="bor der mt-1 w-[147px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[170px] md:mt-3 lg:mt-4"
+                className="mt-1 w-[147px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[170px] md:mt-3 lg:mt-4"
               >
                 <AnimatedBody
                   text={"Send me an email"}
-                  className={"bor der w-[190px] pr-[40px] md:w-[170px] md:pr-0"}
+                  className={"w-[190px] pr-[40px] md:w-[170px] md:pr-0"}
                 />
               </Link>
               <AnimatedBody
                 text={"or"}
                 className={
-                  "bor der -mb-1 ml-2 inline-block overflow-hidden sm:-mb-2 md:-ml-[8px] md:-mb-3 lg:-mb-4"
+                  "-mb-1 ml-2 inline-block overflow-hidden text-slate-300 sm:-mb-2 md:-ml-[8px] md:-mb-3 lg:-mb-4"
                 }
               />
               <Link
                 href="https://cal.com/victorwilliams/30min"
                 target="_blank"
                 aria-label="Send me an email"
-                className="bor der mt-1 w-[110px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[147px] md:mt-3 md:-ml-[3px] md:w-[120px] lg:mt-4"
+                className="mt-1 w-[110px] flex-1 underline underline-offset-2 hover:no-underline sm:mt-2 sm:w-[147px] md:mt-3 md:-ml-[3px] md:w-[120px] lg:mt-4"
               >
                 <AnimatedBody
                   text={"Book a call"}
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex gap-10 text-[16px] font-bold text-[#e4ded7]  sm:gap-14 sm:text-[24px] md:gap-10 md:text-[16px] lg:gap-20 lg:text-[28px]">
+          <div className="flex gap-10 text-[16px] font-bold text-slate-100 sm:gap-14 sm:text-[20px] md:gap-10 md:text-[16px] lg:gap-16 lg:text-[22px]">
             <Link
               href="https://github.com/victorcodess"
               target="_blank"
@@ -84,7 +84,7 @@ const Contact = () => {
               <AnimatedTitle
                 text={"GH"}
                 className={
-                  "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                  "text-[16px] font-bold text-slate-100 sm:text-[18px] md:text-[16px] lg:text-[20px]"
                 }
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
@@ -98,7 +98,7 @@ const Contact = () => {
               <AnimatedTitle
                 text={"LN"}
                 className={
-                  "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                  "text-[16px] font-bold text-slate-100 sm:text-[18px] md:text-[16px] lg:text-[20px]"
                 }
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
@@ -112,7 +112,7 @@ const Contact = () => {
               <AnimatedTitle
                 text={"TW"}
                 className={
-                  "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                  "text-[16px] font-bold text-slate-100 sm:text-[18px] md:text-[16px] lg:text-[20px]"
                 }
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
@@ -126,7 +126,7 @@ const Contact = () => {
               <AnimatedTitle
                 text={"IG"}
                 className={
-                  "text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"
+                  "text-[16px] font-bold text-slate-100 sm:text-[18px] md:text-[16px] lg:text-[20px]"
                 }
                 wordSpace={"mr-[0.25em]"}
                 charSpace={"mr-[0.01em]"}
