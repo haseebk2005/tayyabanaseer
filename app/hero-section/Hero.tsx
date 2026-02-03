@@ -5,18 +5,19 @@ import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/tayyaba.png";
+import ThemeToggleButton from "../theme/ThemeToggleButton";
 
 const Hero = () => {
   return (
     <motion.section
-      className="relative z-10 flex h-[85vh] w-full items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover  bg-center py-0 sm:h-[90vh]  md:h-[100vh] 3xl:h-[85vh]"
+      className="relative z-10 flex h-[85vh] w-full items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover bg-center py-0 sm:h-[90vh] md:h-[100vh] 3xl:h-[85vh]"
       id="home"
       initial="initial"
       animate="animate"
     >
-      <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-[#0E1016] mix-blend-color"></motion.div>
+      <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-gradient-to-br from-brand.deep via-brand.teal to-brand.primary mix-blend-multiply opacity-95 dark:from-slate-950 dark:via-brand.deep dark:to-brand.primary"></motion.div>
 
-      <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
+      <div className="absolute top-8 flex w-full max-w-[1100px] items-center justify-between px-6 sm:top-10 sm:w-[90%] lg:max-w-[1440px]">
         <div>
           <Link
             href="https://cal.com/victorwilliams/30min"
@@ -24,7 +25,7 @@ const Hero = () => {
             aria-label="BOOK A CALL"
           >
             <motion.button
-              className="hidden rounded-md border-2 border-[#e4ded7] py-2 px-4 text-[14px] font-semibold text-[#e4ded7] sm:block  md:text-[16px] lg:block"
+              className="hidden rounded-full border border-brand.accent/70 bg-brand.primary/30 py-2 px-5 text-[14px] font-semibold uppercase tracking-wide text-slate-50 shadow-lg backdrop-blur-md transition hover:bg-brand.accent hover:text-slate-950 sm:inline-flex md:text-[16px]"
               variants={bodyAnimation}
             >
               BOOK A CALL
@@ -32,14 +33,14 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="flex gap-10 text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
+        <div className="flex items-center gap-6 text-slate-50 sm:gap-8 md:gap-10 lg:gap-10">
           <Link
             href="https://github.com/victorcodess"
             target="_blank"
             aria-label="View GitHub Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className="text-[16px] font-bold text-slate-50 md:text-[16px]"
               variants={bodyAnimation}
             >
               GH
@@ -51,7 +52,7 @@ const Hero = () => {
             aria-label="View LinkedIn Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className="text-[16px] font-bold text-slate-50 md:text-[16px]"
               variants={bodyAnimation}
             >
               LN
@@ -63,7 +64,7 @@ const Hero = () => {
             aria-label="View Twitter Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className="text-[16px] font-bold text-slate-50 md:text-[16px]"
               variants={bodyAnimation}
             >
               TW
@@ -75,12 +76,16 @@ const Hero = () => {
             aria-label="View Contra Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className="text-[16px] font-bold text-slate-50 md:text-[16px]"
               variants={bodyAnimation}
             >
               CO
             </motion.p>
           </Link>
+
+          <div className="ml-4">
+            <ThemeToggleButton />
+          </div>
         </div>
       </div>
 
@@ -117,7 +122,7 @@ const Hero = () => {
           className="  max-w-[350px] md:max-w-[400px] lg:max-w-[400px]"
           variants={bodyAnimation}
         >
-          <p className="z-50 text-center text-[16px] font-medium text-[#e4ded7] md:text-[20px] lg:text-left">
+          <p className="z-50 text-center text-[16px] font-medium text-slate-50 md:text-[20px] lg:text-left">
             Frontend Engineer and Web Designer, prev at{" "}
             <Link
               href="https://www.trivia.com/"
@@ -135,7 +140,7 @@ const Hero = () => {
           className="  hidden max-w-[500px] lg:block lg:max-w-[420px]"
           variants={bodyAnimation}
         >
-          <p className="text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
+          <p className="text-right text-[16px] font-semibold text-slate-50 md:text-[20px]">
             Focused on interfaces and experiences, working remotely from Gojra,
             Pakistan.
           </p>

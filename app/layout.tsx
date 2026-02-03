@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "./theme/ThemeProvider";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -86,12 +87,14 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
+        className={`${syne.className} scroll-smooth bg-brand.deep text-slate-50 transition-colors duration-300 scrollbar-thin scrollbar-track-brand.teal/60 scrollbar-thumb-brand.accent/80 dark:bg-slate-950 dark:text-slate-50`}
       >
-        {children}
-        <Analytics />
+        <ThemeProvider>
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +13,14 @@ module.exports = {
     extend: {
       screens: {
         "3xl": "1600px",
+      },
+      colors: {
+        brand: {
+          deep: "#005461",
+          teal: "#0C7779",
+          primary: "#249E94",
+          accent: "#3BC1A8",
+        },
       },
     },
   },
